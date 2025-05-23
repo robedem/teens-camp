@@ -173,7 +173,7 @@ const MainSection = () => {
         id="register"
         ref={registerRef}
       >
-        <h2>Register for TOMS Camp 2025</h2>
+        <h2>Registrations for TOMS Camp 2025 are ongoing! 🥳</h2>
         <div className="register-content">
           <div className="register-details">
             <p className="date">August 20th – 25th, 2025</p>
