@@ -12,7 +12,7 @@ import campHighlightImage from '../assets/camp-highlight-image.jpg';
 
 const MainSection = () => {
   // Countdown Timer Logic
-  const campDate = new Date('August 20, 2025 00:00:00').getTime();
+  const campDate = new Date('August 19, 2025 00:00:00').getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -66,10 +66,11 @@ const MainSection = () => {
             <h2>
               theme: <span className="cast">
                 <span className="c">C</span>
-                <span className="a">A</span>
+                <span className="r">R</span>
+                <span className="u">U</span>
+                <span className="i">I</span>
                 <span className="s">S</span>
-                <span className="t">T</span>
-                <span className="excl">!</span>
+                <span className="e">E</span> {/* Removed extra E as per your correction */}
               </span>
             </h2>
             <h3 className="welcome-heading">Welcome to TOMS Camp 2025</h3>
@@ -176,7 +177,7 @@ const MainSection = () => {
         <h2>Registrations for TOMS Camp 2025 are ongoing! 🥳</h2>
         <div className="register-content">
           <div className="register-details">
-            <p className="date">August 20th – 25th, 2025</p>
+            <p className="date">August 19th – 24th, 2025</p>
             <div className="countdown">
               <div><span>{timeLeft.days}</span> Days</div>
               <div><span>{timeLeft.hours}</span> Hours</div>
@@ -190,9 +191,9 @@ const MainSection = () => {
           <div className="register-info">
             <div className="info-box">
               <h3>Camp Fee</h3>
-              <p className="amount">₦3500</p>
+              <p className="amount">₦5,000</p>
               <p className="early">Early Registration Recommended</p>
-              <p className="late">Highly Subsidized – Late Registration Attracts Extra Charges!</p>
+              <p className="late">Late Registration after August 19th : ₦5,500</p>
             </div>
             <div className="info-box">
               <h3>Venue</h3>

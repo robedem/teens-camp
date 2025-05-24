@@ -191,15 +191,51 @@
 }
 
 .hero-content h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 10px;
 }
 
-.cast .c { color: #fff; }
-.cast .a { color: #2e7d32; }
-.cast .s { color: #ffd700; }
-.cast .t { color: #d32f2f; }
-.cast .excl { color: #fff; }
+.cast .c { color: #ffd700; }   /* gold */
+.cast .r { color: #2e7d32; }   /* green */
+.cast .u { color: #00acc1; }   /* cyan */
+.cast .i { color: #e91e63; }   /* pink */
+.cast .s { color: #5d4037; }   /* brown */
+.cast .e { color: #3f51b5; }   /* indigo */
+
+
+
+.welcome-heading {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 20px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.get-started-button {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.get-started-button:hover {
+  background-color: #1b5e20;
+}
+
+/* Removed unused styles for .cast .c, .cast .a, .cast .s, .cast .t, .cast .excl */
 
 .welcome-heading {
   font-size: 2.5rem;
@@ -499,19 +535,19 @@
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 15px 10px; /* Reduced padding */
+  padding: 15px 10px;
   text-align: center;
 }
 
 .footer h2 {
-  font-size: 1.2rem; /* Reduced font size */
-  margin-bottom: 5px; /* Reduced margin */
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   color: #2e7d32;
 }
 
 .footer p {
-  margin: 3px 0; /* Reduced margin */
-  font-size: 0.8rem; /* Reduced font size */
+  margin: 3px 0;
+  font-size: 0.8rem;
 }
 
 .footer p a {
@@ -523,15 +559,28 @@
   text-decoration: underline;
 }
 
+.footer .contact-info {
+  margin: 5px 0;
+}
+
+.footer .contact-info a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer .contact-info a:hover {
+  text-decoration: underline;
+}
+
 .social-icons {
-  margin-top: 5px; /* Reduced margin */
+  margin-top: 5px;
 }
 
 .social-icons a {
   color: #fff;
-  margin: 0 5px; /* Reduced margin */
+  margin: 0 5px;
   text-decoration: none;
-  font-size: 0.8rem; /* Reduced font size */
+  font-size: 0.8rem;
 }
 
 .social-icons a:hover {
@@ -625,7 +674,7 @@
     font-size: 1.1rem;
   }
   .footer {
-    padding: 20px 15px; /* Slightly larger padding for desktop */
+    padding: 20px 15px;
   }
   .footer h2 {
     font-size: 1.8rem;
