@@ -198,7 +198,7 @@ const MainSection = () => {
               <h3>Camp Fee</h3>
               <p className="amount">₦5,000</p>
               <p className="early">Early Registration Recommended</p>
-              <p className="late">late payment after 19th August :₦5,500</p>
+              <p className="late">late payment after 9th August :₦5,500</p>
             </div>
             <div className="info-box">
               <h3>Venue</h3>

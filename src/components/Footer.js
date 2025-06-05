@@ -12,7 +12,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="social-icons">
-        <a href="https://facebook.com/teenscamp" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.facebook.com/share/16h3m7r2b8/" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://twitter.com/teenscamp" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a href="https://instagram.com/teenscamp" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
