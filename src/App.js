@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import MainSection from './components/MainSection';
 import Footer from './components/Footer';
 import './styles.css';
 
+// Scroll to Top Component
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set loading time to 6 seconds (6000ms)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 6000);
@@ -17,20 +28,25 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      {isLoading ? (
-        <div className="loader">
-          <div className="progress-bar"></div>
-          <p>TOMS CAMP 2025 🥳</p>
-        </div>
-      ) : (
-        <>
-          <Header />
-          <MainSection />
-          <Footer />
-        </>
-      )}
-    </div>
+    <Router>
+      <div className="app">
+        {isLoading ? (
+          <div className="loader">
+            <div className="progress-bar"></div>
+            <p>TOMS CAMP 2025 🥳</p>
+          </div>
+        ) : (
+          <>
+            <ScrollToTop />
+            <Header />
+            <Routes>
+              <Route path="/" element={<MainSection />} />
+            </Routes>
+            <Footer />
+          </>
+        )}
+      </div>
+    </Router>
   );
 }
 

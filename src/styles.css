@@ -1,3 +1,13 @@
+/* Global Font Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Dark background for the entire page */
+  color: #e0e0e0; /* Light text color for readability */
+}
+
 /* Loader Styles */
 .loader {
   position: fixed;
@@ -12,19 +22,20 @@
   z-index: 1000;
   animation: fadeOut 0.5s ease-in-out forwards;
   animation-delay: 5.5s;
+  background-color: #1e1e1e; /* Dark background for loader */
 }
 
 .loader p {
-  color: #333;
+  color: #e0e0e0; /* Light text for loader */
   font-size: 1.2rem;
   margin-top: 20px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .progress-bar {
   width: 200px;
   height: 10px;
-  background-color: #e0e0e0;
+  background-color: #333; /* Darker progress bar background */
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -37,7 +48,7 @@
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #2e7d32;
+  background-color: #4caf50; /* Slightly brighter green for contrast */
   animation: progress 5s ease-in-out infinite;
   border-radius: 5px;
 }
@@ -81,8 +92,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e; /* Dark header background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -104,7 +115,7 @@
 .hamburger span {
   width: 100%;
   height: 3px;
-  background-color: #333;
+  background-color: #e0e0e0; /* Light hamburger lines */
   transition: all 0.3s ease;
 }
 
@@ -119,13 +130,14 @@
 
 .nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #e0e0e0; /* Light text for nav links */
+  font-weight: 500;
   padding: 10px 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav ul li a:hover {
-  color: #2e7d32;
+  color: #4caf50; /* Brighter green on hover */
 }
 
 .nav.open ul {
@@ -135,8 +147,8 @@
   top: 60px;
   left: 0;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e; /* Dark background for mobile nav */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav.open ul li {
@@ -158,6 +170,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-image 1s ease-in-out; /* Fade transition for slider */
 }
 
 .hero-overlay {
@@ -166,7 +179,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Darker overlay for better contrast */
 }
 
 .hero-content {
@@ -182,8 +195,11 @@
   height: 100%;
 }
 
-.hero-content h1 {
-  font-size: 2rem;
+.hero-content h1,
+.hero-content h2,
+.welcome-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .hero-content h1 .teens-camp {
@@ -191,26 +207,18 @@
 }
 
 .hero-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
-.cast .c { color: #ffd700; }   /* gold */
-.cast .r { color: #2e7d32; }   /* green */
-.cast .u { color: #00acc1; }   /* cyan */
-.cast .i { color: #e91e63; }   /* pink */
-.cast .s { color: #5d4037; }   /* brown */
-.cast .e { color: #3f51b5; }   /* indigo */
-
-
-
-.welcome-heading {
-  font-size: 2.5rem;
-  margin: 20px 0;
-  font-weight: bold;
-}
+.cast .c { color: #fff; }
+.cast .r { color: #2e7d32; }
+.cast .u { color: #ffd700; }
+.cast .i { color: #d32f2f; }
+.cast .s { color: #fff; }
 
 .welcome-text {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   color: #fff;
   margin: 20px 0;
@@ -220,69 +228,41 @@
 }
 
 .get-started-button {
-  background-color: #2e7d32;
+  background-color: #4caf50; /* Green buttons */
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s;
   margin-top: 20px;
 }
 
 .get-started-button:hover {
-  background-color: #1b5e20;
-}
-
-/* Removed unused styles for .cast .c, .cast .a, .cast .s, .cast .t, .cast .excl */
-
-.welcome-heading {
-  font-size: 2.5rem;
-  margin: 20px 0;
-  font-weight: bold;
-}
-
-.welcome-text {
-  font-size: 1.1rem;
-  color: #fff;
-  margin: 20px 0;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.get-started-button {
-  background-color: #2e7d32;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 20px;
-}
-
-.get-started-button:hover {
-  background-color: #1b5e20;
+  background-color: #388e3c; /* Darker green on hover */
 }
 
 /* About Section */
 .about-section {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #1e1e1e; /* Dark background */
 }
 
-.about-section h2 {
-  font-size: 1.8rem;
-  color: #2e7d32;
-  text-align: center;
+.about-section h2,
+.features-section h2,
+.highlight-section h3,
+.register-section h2,
+.info-box h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .section-intro {
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  color: #666;
+  color: #b0b0b0; /* Lighter gray for secondary text */
   margin-top: 5px;
   margin-bottom: 15px;
   text-align: center;
@@ -306,8 +286,9 @@
 }
 
 .about-text p {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  color: #333;
+  color: #b0b0b0;
 }
 
 .about-image {
@@ -325,13 +306,7 @@
 /* Features Section */
 .features-section {
   padding: 40px 20px;
-  background-color: #fff;
-}
-
-.features-section h2 {
-  font-size: 1.8rem;
-  color: #2e7d32;
-  text-align: center;
+  background-color: #121212; /* Slightly lighter dark background for contrast */
 }
 
 .features-content {
@@ -355,10 +330,16 @@
   border-radius: 5px;
 }
 
+.activity p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #b0b0b0;
+}
+
 /* Highlight Section */
 .highlight-section {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #1e1e1e;
 }
 
 .highlight-content {
@@ -374,15 +355,10 @@
   min-width: 300px;
 }
 
-.highlight-text h3 {
-  font-size: 1.8rem;
-  color: #2e7d32;
-  margin-bottom: 15px;
-}
-
 .highlight-text p {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  color: #333;
+  color: #b0b0b0;
 }
 
 .highlight-image {
@@ -400,7 +376,7 @@
 /* Register Section */
 .register-section {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #121212;
   text-align: center;
 }
 
@@ -428,7 +404,7 @@
 
 .register-details .date {
   font-size: 1.2rem;
-  color: #d32f2f;
+  color: #ff5252;
   margin-bottom: 15px;
 }
 
@@ -440,7 +416,7 @@
 }
 
 .register-details .countdown div {
-  background-color: #2e7d32;
+  background-color: #4caf50;
   color: #fff;
   padding: 8px;
   border-radius: 50%;
@@ -462,7 +438,7 @@
 
 .register-details .activities {
   font-size: 0.9rem;
-  color: #333;
+  color: #b0b0b0;
   margin-top: 10px;
   font-style: italic;
   overflow-wrap: break-word;
@@ -479,36 +455,36 @@
 }
 
 .info-box {
-  background-color: #f9f9f9;
+  background-color: #1e1e1e;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-align: left;
 }
 
 .info-box h3 {
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: #b0b0b0;
   margin-bottom: 5px;
 }
 
 .info-box .amount {
   font-size: 1.5rem;
-  color: #2e7d32;
+  color: #4caf50;
   font-weight: bold;
   margin: 5px 0;
 }
 
 .info-box .early {
-  color: #2e7d32;
+  color: #4caf50;
   font-weight: bold;
   font-size: 0.8rem;
 }
 
 .info-box .late {
   font-size: 0.8rem;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .register-button {
@@ -516,33 +492,40 @@
   margin-top: 10px;
 }
 
-.register-button button {
-  background-color: #2e7d32;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Register Button Styling */
+.register-button {
+  text-align: center; /* Keep centering */
 }
 
-.register-button button:hover {
-  background-color: #1b5e20;
+.register-button a.register-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.register-button a.register-button:hover {
+  background-color: #388e3c;
 }
 
 /* Footer Styles */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
   padding: 15px 10px;
   text-align: center;
 }
 
 .footer h2 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-  color: #2e7d32;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #4caf50; /* Green for footer heading */
 }
 
 .footer p {
@@ -550,24 +533,13 @@
   font-size: 0.8rem;
 }
 
-.footer p a {
-  color: #ffd700;
-  text-decoration: none;
-}
-
-.footer p a:hover {
-  text-decoration: underline;
-}
-
-.footer .contact-info {
-  margin: 5px 0;
-}
-
+.footer p a,
 .footer .contact-info a {
-  color: #ffd700;
+  color: #ffd700; /* Gold for links */
   text-decoration: none;
 }
 
+.footer p a:hover,
 .footer .contact-info a:hover {
   text-decoration: underline;
 }
@@ -577,14 +549,14 @@
 }
 
 .social-icons a {
-  color: #fff;
+  color: #e0e0e0;
   margin: 0 5px;
   text-decoration: none;
   font-size: 0.8rem;
 }
 
 .social-icons a:hover {
-  color: #2e7d32;
+  color: #4caf50;
 }
 
 /* Responsive Design */
@@ -751,7 +723,7 @@
     font-size: 2rem;
   }
   .hero-content h2 {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased from 1.5rem to make CRUISE larger */
   }
   .about-content {
     flex-direction: column;

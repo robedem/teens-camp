@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 import campImage from '../assets/camp-image.jpg';
+import flyerImage from '../assets/flyer-image.jpg';
 import aboutUsImage from '../assets/about-us-image.jpg';
 import gamesImage from '../assets/games-image.jpg';
 import prayerImage from '../assets/prayer-image.jpg';
@@ -11,7 +13,6 @@ import Competition from '../assets/Winners.jpeg';
 import campHighlightImage from '../assets/camp-highlight-image.jpg';
 
 const MainSection = () => {
-  // Countdown Timer Logic
   const campDate = new Date('August 19, 2025 00:00:00').getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -19,6 +20,17 @@ const MainSection = () => {
     minutes: 0,
     seconds: 0,
   });
+
+  const images = [campImage, flyerImage];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const sliderTimer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(sliderTimer);
+  }, [images.length]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -42,7 +54,6 @@ const MainSection = () => {
     return () => clearInterval(timer);
   }, [campDate]);
 
-  // Intersection Observer for animations
   const { ref: heroRef, inView: heroInView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const { ref: aboutRef, inView: aboutInView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const { ref: featuresRef, inView: featuresInView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -51,10 +62,9 @@ const MainSection = () => {
 
   return (
     <main className="main-section">
-      {/* Hero Section */}
       <section
         className={`hero ${heroInView ? 'fade-in' : ''}`}
-        style={{ backgroundImage: `url(${campImage})` }}
+        style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
         ref={heroRef}
         id="home"
       >
@@ -70,7 +80,7 @@ const MainSection = () => {
                 <span className="u">U</span>
                 <span className="i">I</span>
                 <span className="s">S</span>
-                <span className="e">E</span> {/* Removed extra E as per your correction */}
+                <span className="e">E</span>
               </span>
             </h2>
             <h3 className="welcome-heading">Welcome to TOMS Camp 2025</h3>
@@ -79,12 +89,11 @@ const MainSection = () => {
               Our mission is to bridge the gap between talented teens and transformative opportunities, dedicated to providing 
               a supportive and enriching camp environment.
             </p>
-            <button className="get-started-button">Get Started</button>
+           <a href="https://tom-registration-uwakmfon-ibanga-19bef74e.vercel.app/" className="get-started-button" target="_blank" rel="noopener noreferrer">Get Started</a>
           </div>
         </div>
       </section>
 
-      {/* About Us Section */}
       <section
         className={`about-section ${aboutInView ? 'slide-in' : ''}`}
         id="about"
@@ -110,7 +119,6 @@ const MainSection = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section
         className={`features-section ${featuresInView ? 'fade-in' : ''}`}
         ref={featuresRef}
@@ -147,7 +155,6 @@ const MainSection = () => {
         </div>
       </section>
 
-      {/* Highlight Section */}
       <section
         className={`highlight-section ${highlightInView ? 'slide-in' : ''}`}
         ref={highlightRef}
@@ -168,7 +175,6 @@ const MainSection = () => {
         </div>
       </section>
 
-      {/* Register Section */}
       <section
         className={`register-section ${registerInView ? 'fade-in' : ''}`}
         id="register"
@@ -193,14 +199,17 @@ const MainSection = () => {
               <h3>Camp Fee</h3>
               <p className="amount">₦5,000</p>
               <p className="early">Early Registration Recommended</p>
-              <p className="late">Late Registration after August 19th : ₦5,500</p>
+              <p className="late">Payment via Remita</p>
             </div>
             <div className="info-box">
               <h3>Venue</h3>
-              <p>Lutheran High School, Ubot Idim, Akwa Ibom State</p>
+              <p>Lutheran High School, Obot Idim, Akwa Ibom State</p>
             </div>
+           
             <div className="register-button">
-              <button>Register Now</button>
+            <div className="register-button">
+               <a href="https://tom-registration-uwakmfon-ibanga-19bef74e.vercel.app/" className="register-button" target="_blank" rel="noopener noreferrer">Register Now</a>
+            </div>
             </div>
           </div>
         </div>
