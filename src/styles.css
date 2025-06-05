@@ -4,8 +4,8 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #121212; /* Dark background for the entire page */
-  color: #e0e0e0; /* Light text color for readability */
+  background-color: #ffffff; /* Changed from #121212 to white */
+  color: #333333; /* Changed from #e0e0e0 to darker text for readability on white */
 }
 
 /* Loader Styles */
@@ -22,20 +22,20 @@ body {
   z-index: 1000;
   animation: fadeOut 0.5s ease-in-out forwards;
   animation-delay: 5.5s;
-  background-color: #1e1e1e; /* Dark background for loader */
+  background-color: #ffffff; /* Changed from #1e1e1e to white */
 }
 
 .loader p {
-  color: #e0e0e0; /* Light text for loader */
-  font-size: 1.2rem;
+  color: #333333; /* Changed from #e0e0e0 to darker text */
+  font-size: 1.1rem; /* Reduced from 1.2rem */
   margin-top: 20px;
   font-weight: 500;
 }
 
 .progress-bar {
   width: 200px;
-  height: 10px;
-  background-color: #333; /* Darker progress bar background */
+  height: 8px; /* Reduced from 10px */
+  background-color: #cccccc; /* Lighter gray for contrast on white */
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -48,7 +48,7 @@ body {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #4caf50; /* Slightly brighter green for contrast */
+  background-color: #4caf50;
   animation: progress 5s ease-in-out infinite;
   border-radius: 5px;
 }
@@ -91,36 +91,37 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #1e1e1e; /* Dark header background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px; /* Reduced from 10px 20px to shrink navbar */
+  background-color: #ffffff; /* Changed from #1e1e1e to white */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow intensity */
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  height: 40px;
+  height: 30px; /* Reduced from 40px to shrink navbar */
 }
 
 .hamburger {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 20px;
+  width: 25px; /* Reduced from 30px */
+  height: 18px; /* Reduced from 20px */
   cursor: pointer;
 }
 
 .hamburger span {
   width: 100%;
-  height: 3px;
-  background-color: #e0e0e0; /* Light hamburger lines */
+  height: 2px; /* Reduced from 3px */
+  background-color: #333333; /* Changed from #e0e0e0 to darker text */
   transition: all 0.3s ease;
 }
 
 .nav {
   display: flex;
+  margin-left: 20px; /* Added to adjust link spacing from logo */
 }
 
 .nav ul {
@@ -130,29 +131,30 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: #e0e0e0; /* Light text for nav links */
+  color: #333333; /* Changed from #e0e0e0 to darker text */
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 5px 10px; /* Reduced from 10px 15px */
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em; /* Reduced from default */
 }
 
 .nav ul li a:hover {
-  color: #4caf50; /* Brighter green on hover */
+  color: #4caf50;
 }
 
 .nav.open ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
+  top: 50px; /* Reduced from 60px */
   left: 0;
   width: 100%;
-  background-color: #1e1e1e; /* Dark background for mobile nav */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff; /* Changed from #1e1e1e to white */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav.open ul li {
-  padding: 10px 20px;
+  padding: 8px 20px; /* Reduced from 10px 20px */
 }
 
 /* Main Section Styles */
@@ -163,14 +165,14 @@ body {
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 80vh; /* Reduced from 100vh */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-image 1s ease-in-out; /* Fade transition for slider */
+  transition: background-image 1s ease-in-out;
 }
 
 .hero-overlay {
@@ -179,15 +181,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Darker overlay for better contrast */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Changed to white overlay */
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: #fff;
-  padding: 20px;
+  color: #ffffff; /* Changed from #fff to darker text */
+  padding: 15px; /* Reduced from 20px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,47 +209,47 @@ body {
 }
 
 .hero-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Reduced from 1.5rem */
   margin-top: 10px;
 }
 
-.cast .c { color: #fff; }
+.cast .c { color: #ffffff; }
 .cast .r { color: #2e7d32; }
 .cast .u { color: #ffd700; }
 .cast .i { color: #d32f2f; }
-.cast .s { color: #fff; }
+.cast .s { color: #333333; }
 
 .welcome-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: #fff;
-  margin: 20px 0;
+  font-size: 1rem; /* Reduced from 1.1rem */
+  color: #ffffff; /* Changed from #fff */
+  margin: 15px 0; /* Reduced from 20px */
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .get-started-button {
-  background-color: #4caf50; /* Green buttons */
+  background-color: #4caf50;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 15px; /* Reduced from 10px 20px */
   border: none;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Reduced from 1.1rem */
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s;
-  margin-top: 20px;
+  margin-top: 15px; /* Reduced from 20px */
 }
 
 .get-started-button:hover {
-  background-color: #388e3c; /* Darker green on hover */
+  background-color: #388e3c;
 }
 
 /* About Section */
 .about-section {
-  padding: 40px 20px;
-  background-color: #1e1e1e; /* Dark background */
+  padding: 30px 15px; /* Reduced from 40px 20px */
+  background-color: #ffffff; /* Changed from #1e1e1e to white */
 }
 
 .about-section h2,
@@ -257,12 +259,13 @@ body {
 .info-box h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 1.5rem; /* Reduced from default */
 }
 
 .section-intro {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #b0b0b0; /* Lighter gray for secondary text */
+  font-size: 0.9rem; /* Reduced from 1rem */
+  color: #666666; /* Lighter gray for secondary text */
   margin-top: 5px;
   margin-bottom: 15px;
   text-align: center;
@@ -287,8 +290,8 @@ body {
 
 .about-text p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: #b0b0b0;
+  font-size: 1rem; /* Reduced from 1.1rem */
+  color: #666666;
 }
 
 .about-image {
@@ -298,33 +301,33 @@ body {
 
 .about-img {
   width: 100%;
-  height: 350px;
+  height: 300px; /* Reduced from 350px */
   object-fit: cover;
   border-radius: 8px;
 }
 
 /* Features Section */
 .features-section {
-  padding: 40px 20px;
-  background-color: #121212; /* Slightly lighter dark background for contrast */
+  padding: 30px 15px; /* Reduced from 40px 20px */
+  background-color: #ffffff; /* Changed from #121212 to white */
 }
 
 .features-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px; /* Reduced from 20px */
   justify-content: center;
 }
 
 .activity {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px; /* Reduced from 300px */
   text-align: center;
 }
 
 .activity-img {
   width: 100%;
-  height: 150px;
+  height: 140px; /* Reduced from 150px */
   object-fit: cover;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -332,14 +335,14 @@ body {
 
 .activity p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: #b0b0b0;
+  font-size: 1rem; /* Reduced from 1.1rem */
+  color: #666666;
 }
 
 /* Highlight Section */
 .highlight-section {
-  padding: 40px 20px;
-  background-color: #1e1e1e;
+  padding: 30px 15px; /* Reduced from 40px 20px */
+  background-color: #ffffff; /* Changed from #1e1e1e to white */
 }
 
 .highlight-content {
@@ -357,8 +360,8 @@ body {
 
 .highlight-text p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: #b0b0b0;
+  font-size: 1rem; /* Reduced from 1.1rem */
+  color: #666666;
 }
 
 .highlight-image {
@@ -368,28 +371,28 @@ body {
 
 .highlight-img {
   width: 100%;
-  height: 350px;
+  height: 300px; /* Reduced from 350px */
   object-fit: cover;
   border-radius: 8px;
 }
 
 /* Register Section */
 .register-section {
-  padding: 40px 20px;
-  background-color: #121212;
+  padding: 30px 15px; /* Reduced from 40px 20px */
+  background-color: #ffffff; /* Changed from #121212 to white */
   text-align: center;
 }
 
 .register-section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Reduced from 2rem */
   color: #2e7d32;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced from 20px */
 }
 
 .register-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px; /* Reduced from 15px */
   justify-content: center;
   align-items: stretch;
 }
@@ -403,43 +406,42 @@ body {
 }
 
 .register-details .date {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Reduced from 1.2rem */
   color: #ff5252;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Reduced from 15px */
 }
 
 .register-details .countdown {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin: 15px 0;
+  gap: 6px; /* Reduced from 8px */
+  margin: 10px 0; /* Reduced from 15px */
 }
 
 .register-details .countdown div {
   background-color: #4caf50;
   color: #fff;
-  padding: 8px;
+  padding: 6px; /* Reduced from 8px */
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Reduced from 50px */
+  height: 40px; /* Reduced from 50px */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.7rem;
-  text-transform: uppercase;
+  font-size: 0.6rem; /* Reduced from 0.7rem */
 }
 
 .register-details .countdown span {
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced from 1rem */
   font-weight: bold;
 }
 
 .register-details .activities {
-  font-size: 0.9rem;
-  color: #b0b0b0;
-  margin-top: 10px;
+  font-size: 0.8rem; /* Reduced from 0.9rem */
+  color: #666666;
+  margin-top: 8px; /* Reduced from 10px */
   font-style: italic;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -450,41 +452,41 @@ body {
   min-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px; /* Reduced from 15px */
   justify-content: center;
 }
 
 .info-box {
-  background-color: #1e1e1e;
-  padding: 15px;
+  background-color: #ffffff; /* Changed from #1e1e1e to white */
+  padding: 12px; /* Reduced from 15px */
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
 .info-box h3 {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced from 1rem */
   font-weight: bold;
-  color: #b0b0b0;
-  margin-bottom: 5px;
+  color: #666666;
+  margin-bottom: 4px; /* Reduced from 5px */
 }
 
 .info-box .amount {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Reduced from 1.5rem */
   color: #4caf50;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 4px 0; /* Reduced from 5px */
 }
 
 .info-box .early {
   color: #4caf50;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.7rem; /* Reduced from 0.8rem */
 }
 
 .info-box .late {
-  font-size: 0.8rem;
-  color: #b0b0b0;
+  font-size: 0.7rem; /* Reduced from 0.8rem */
+  color: #666666;
 }
 
 .register-button {
@@ -493,17 +495,13 @@ body {
 }
 
 /* Register Button Styling */
-.register-button {
-  text-align: center; /* Keep centering */
-}
-
 .register-button a.register-button {
   background-color: #4caf50;
   color: #fff;
-  padding: 8px 15px;
+  padding: 6px 12px; /* Reduced from 8px 15px */
   border: none;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: 0.8rem; /* Reduced from 0.9rem */
   cursor: pointer;
   transition: background-color 0.3s;
   text-decoration: none;
@@ -516,26 +514,27 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-  padding: 15px 10px;
+  background-color: #e8f5e9; /* Changed from #1e1e1e to white */
+  color: #333333; /* Changed from #e0e0e0 to darker text */
+  padding: 12px 10px; /* Reduced from 15px 10px */
   text-align: center;
 }
 
 .footer h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #4caf50; /* Green for footer heading */
+  color: #4caf50;
+  font-size: 1.5rem; /* Reduced from default */
 }
 
 .footer p {
-  margin: 3px 0;
-  font-size: 0.8rem;
+  margin: 2px 0; /* Reduced from 3px */
+  font-size: 0.7rem; /* Reduced from 0.8rem */
 }
 
 .footer p a,
 .footer .contact-info a {
-  color: #ffd700; /* Gold for links */
+  color: #ffd700;
   text-decoration: none;
 }
 
@@ -549,10 +548,10 @@ body {
 }
 
 .social-icons a {
-  color: #e0e0e0;
-  margin: 0 5px;
+  color: #333333; /* Changed from #e0e0e0 to darker text */
+  margin: 0 4px; /* Reduced from 5px */
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.7rem; /* Reduced from 0.8rem */
 }
 
 .social-icons a:hover {
@@ -562,13 +561,13 @@ body {
 /* Responsive Design */
 @media (min-width: 576px) {
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
   .hero-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
   .activity {
-    max-width: 45%;
+    max-width: 40%; /* Reduced from 45% */
   }
 }
 
@@ -583,16 +582,16 @@ body {
     flex-direction: row;
   }
   .hero {
-    height: 100vh;
+    height: 90vh;
   }
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.8rem; /* Reduced from 3rem */
   }
   .hero-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
   .activity {
-    max-width: 30%;
+    max-width: 28%; /* Reduced from 30% */
   }
   .about-content {
     flex-direction: row;
@@ -603,75 +602,75 @@ body {
     text-align: left;
   }
   .about-text, .about-image {
-    max-width: 45%;
+    max-width: 42%; /* Reduced from 45% */
   }
   .highlight-text, .highlight-image {
-    max-width: 45%;
+    max-width: 42%; /* Reduced from 45% */
   }
   .register-content {
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 25px; /* Reduced from 30px */
   }
   .register-details, .register-info {
-    min-width: 45%;
+    min-width: 42%; /* Reduced from 45% */
   }
   .register-details .date {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Reduced from 1.5rem */
   }
   .register-details .countdown div {
-    width: 80px;
-    height: 80px;
-    padding: 15px;
-    font-size: 0.9rem;
+    width: 70px; /* Reduced from 80px */
+    height: 70px; /* Reduced from 80px */
+    padding: 12px; /* Reduced from 15px */
+    font-size: 0.8rem; /* Reduced from 0.9rem */
   }
   .register-details .countdown span {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Reduced from 1.5rem */
   }
   .register-details .activities {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduced from 1.1rem */
   }
   .info-box {
-    padding: 20px;
+    padding: 18px; /* Reduced from 20px */
   }
   .info-box h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Reduced from 1.2rem */
   }
   .info-box .amount {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
   .info-box .early, .info-box .late {
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Reduced from 0.9rem */
   }
-  .register-button button {
-    font-size: 1.1rem;
+  .register-button a.register-button {
+    font-size: 1rem; /* Reduced from 1.1rem */
   }
   .footer {
-    padding: 20px 15px;
+    padding: 18px 12px; /* Reduced from 20px 15px */
   }
   .footer h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Reduced from 1.8rem */
   }
   .footer p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduced from 1rem */
   }
   .social-icons a {
-    font-size: 1.1rem;
-    margin: 0 10px;
+    font-size: 1rem; /* Reduced from 1.1rem */
+    margin: 0 8px; /* Reduced from 10px */
   }
 }
 
 @media (min-width: 1024px) {
   .hero-content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem; /* Reduced from 4rem */
   }
   .hero-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reduced from 3rem */
   }
   .welcome-heading {
-    font-size: 3rem;
+    font-size: 2.8rem; /* Reduced from 3rem */
   }
   .welcome-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Reduced from 1.2rem */
   }
   .about-content {
     justify-content: space-around;
@@ -680,17 +679,17 @@ body {
     justify-content: space-around;
   }
   .about-text, .about-image {
-    max-width: 40%;
+    max-width: 38%; /* Reduced from 40% */
   }
   .highlight-text, .highlight-image {
-    max-width: 40%;
+    max-width: 38%; /* Reduced from 40% */
   }
   .register-details .countdown div {
-    width: 100px;
-    height: 100px;
+    width: 90px; /* Reduced from 100px */
+    height: 90px; /* Reduced from 100px */
   }
   .register-details .countdown span {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
 }
 
@@ -707,8 +706,8 @@ body {
   }
   .about-section, .features-section, .highlight-section, .register-section {
     min-height: auto;
-    font-size: 0.9rem;
-    padding: 15px 10px;
+    font-size: 0.8rem; /* Reduced from 0.9rem */
+    padding: 12px 8px; /* Reduced from 15px 10px */
   }
   .hero-content .welcome-heading,
   .hero-content .welcome-text {
@@ -716,22 +715,22 @@ body {
   }
   .hero-content .get-started-button {
     display: block;
-    padding: 8px 16px;
-    font-size: 1rem;
+    padding: 6px 12px; /* Reduced from 8px 16px */
+    font-size: 0.9rem; /* Reduced from 1rem */
   }
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
   .hero-content h2 {
-    font-size: 2rem; /* Increased from 1.5rem to make CRUISE larger */
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
   .about-content {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px; /* Reduced from 10px */
   }
   .highlight-content {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px; /* Reduced from 10px */
   }
   .about-text, .about-image {
     max-width: 100%;
@@ -745,18 +744,27 @@ body {
   }
   .about-img, .highlight-img {
     width: 100%;
-    height: 200px;
+    height: 180px; /* Reduced from 200px */
     object-fit: cover;
     border-radius: 8px;
   }
   .features-content {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px; /* Reduced from 10px */
   }
   .activity {
     max-width: 100%;
   }
   .activity-img {
-    height: 120px;
+    height: 110px; /* Reduced from 120px */
   }
+}
+
+/* Centered Headings (New Addition) */
+.features-section h2 {
+  text-align: center; /* Center "Features to Camp" */
+}
+
+.highlight-section h2 {
+  text-align: center; /* Center "Why Choose TOMS Camp" */
 }
