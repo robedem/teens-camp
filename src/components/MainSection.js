@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Link } from 'react-router-dom';
 import campImage from '../assets/camp-image.jpg';
 import flyerImage from '../assets/flyer-image.jpg';
 import aboutUsImage from '../assets/about-us-image.jpg';
@@ -208,7 +207,7 @@ const MainSection = () => {
            
             <div className="register-button">
             <div className="register-button">
-               <a href="https://tom-registration-uwakmfon-ibanga-19bef74e.vercel.app/" className="register-button" target="_blank" rel="noopener noreferrer">Register Now</a>
+              <a href="https://tom-registration-uwakmfon-ibanga-19bef74e.vercel.app/" className="register-button" target="_blank" rel="noopener noreferrer">Register Now</a>
             </div>
             </div>
           </div>
