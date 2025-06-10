@@ -250,6 +250,7 @@ body {
 .about-section {
   padding: 30px 15px; /* Reduced from 40px 20px */
   background-color: #ffffff; /* Changed from #1e1e1e to white */
+  margin-left: 10px;
 }
 
 .about-section h2,
@@ -310,6 +311,7 @@ body {
 .features-section {
   padding: 30px 15px; /* Reduced from 40px 20px */
   background-color: #ffffff; /* Changed from #121212 to white */
+  margin-left: 10px;
 }
 
 .features-content {
@@ -343,6 +345,7 @@ body {
 .highlight-section {
   padding: 30px 15px; /* Reduced from 40px 20px */
   background-color: #ffffff; /* Changed from #1e1e1e to white */
+  margin-left: 10px;
 }
 
 .highlight-content {
