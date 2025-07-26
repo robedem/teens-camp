@@ -33,7 +33,7 @@ function App() {
         {isLoading ? (
           <div className="loader">
             <div className="progress-bar"></div>
-            <p>TOMS CAMP 2025 🥳</p>
+            <p>TOM CAMP 2025 🥳</p>
           </div>
         ) : (
           <>

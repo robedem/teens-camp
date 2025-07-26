@@ -70,7 +70,7 @@ const MainSection = () => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1>
-              <span className="teens-camp">TOMS CAMP</span> <span>2025</span>
+              <span className="teens-camp">TOM CAMP</span> <span>2025</span>
             </h1>
             <h2>
               theme: <span className="cast">
@@ -80,15 +80,17 @@ const MainSection = () => {
                 <span className="i">I</span>
                 <span className="s">S</span>
                 <span className="e">E</span>
+                <span className="e">?</span>
+
               </span>
             </h2>
-            <h3 className="welcome-heading">Welcome to TOMS Camp 2025</h3>
+            <h3 className="welcome-heading">Welcome to TOM Camp 2025</h3>
             <p className="welcome-text">
-              Welcome to TOMS Camp, your premier destination for an exceptional spiritual and personal growth experience. 
+              Welcome to TOM Camp, your premier destination for an exceptional spiritual and personal growth experience. 
               Our mission is to bridge the gap between talented teens and transformative opportunities, dedicated to providing 
               a supportive and enriching camp environment.
             </p>
-           <a href="https://tom-registration-uwakmfon-ibanga-19bef74e.vercel.app/" className="get-started-button" target="_blank" rel="noopener noreferrer">Get Started</a>
+           <a href="https://mail.tomakwaibom.org.ng/" className="get-started-button" target="_blank" rel="noopener noreferrer">Get Started</a>
           </div>
         </div>
       </section>
@@ -108,7 +110,7 @@ const MainSection = () => {
               <br></br>
               Teenagers’ Outreach Ministries (TOM) Inc., is an interdenominational, non sectarian, faith-based organization (FBO). 
               <br></br>
-              Toms Camp is a yearly event organized to inspire and empower teenagers through faith-based activities, 
+              TOM Camp is a yearly event organized to inspire and empower teenagers through faith-based activities, 
               skill-building workshops, and community engagement. We aim to create a safe space for growth and connection.
             </p>
           </div>
@@ -124,7 +126,7 @@ const MainSection = () => {
       >
         <h2>Features of the Camp</h2>
         <p className="section-intro">
-          Explore the exciting activities and programs that make TOMS Camp a unique and enriching experience.
+          Explore the exciting activities and programs that make TOM Camp a unique and enriching experience.
         </p>
         <div className="features-content">
           <div className="activity">
@@ -160,9 +162,9 @@ const MainSection = () => {
       >
         <div className="highlight-content">
           <div className="highlight-text">
-            <h3>Why Choose TOMS Camp?</h3>
+            <h3>Why Choose TOM Camp?</h3>
             <p>
-              At TOMS Camp, we’re more than just a summer getaway—we’re a life-changing experience! 
+              At TOM Camp, we’re more than just a summer getaway—we’re a life-changing experience! 
               Through faith-based activities like Bible study, worship, and prayer, we help teens build a strong spiritual foundation. 
               Our skill-building workshops and team competitions foster personal growth, leadership, and lasting friendships. 
               Join us to create memories that will inspire and empower you for years to come.
@@ -179,7 +181,7 @@ const MainSection = () => {
         id="register"
         ref={registerRef}
       >
-        <h2>Registrations for TOMS Camp 2025 are ongoing! 🥳</h2>
+        <h2>Registrations for TOM Camp 2025 are ongoing! 🥳</h2>
         <div className="register-content">
           <div className="register-details">
             <p className="date">August 19th – 24th, 2025</p>
@@ -207,7 +209,7 @@ const MainSection = () => {
            
             <div className="register-button">
             <div className="register-button">
-              <a href="https://tom-registration-uwakmfon-ibanga-19bef74e.vercel.app/" className="register-button" target="_blank" rel="noopener noreferrer">Register Now</a>
+              <a href="https://mail.tomakwaibom.org.ng/" className="register-button" target="_blank" rel="noopener noreferrer">Register Now</a>
             </div>
             </div>
           </div>
